@@ -15,6 +15,7 @@ export class GreetingsController {
     greetByName(@Query('name') name: string){
         return this.greetService.greetPerson(name);
     }
+    
     @Get(':name')
     greetByNameV2(@Param('name') name: string){
         return this.greetService.greetPerson(name);
